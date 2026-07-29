@@ -1,43 +1,43 @@
 export const teams = [
-  { name: "Men's First Team", division: "Nordic Premier Division", players: 24, coach: "Coach TBC" },
-  { name: "Women's First Team", division: "Nordic Premier Division", players: 22, coach: "Coach TBC" },
-  { name: "Under 18s", division: "Regional Youth League", players: 20, coach: "Coach TBC" },
-  { name: "Under 15s", division: "Regional Youth League", players: 19, coach: "Coach TBC" },
-  { name: "Under 12s", division: "Development League", players: 18, coach: "Coach TBC" },
-  { name: "Veterans", division: "Masters Social League", players: 16, coach: "Coach TBC" },
+  { name: "Men's First XI", division: "Finnish Premier League (T20)", players: 16, coach: "Coach TBC" },
+  { name: "Men's Second XI", division: "Suomi Division One", players: 15, coach: "Coach TBC" },
+  { name: "Women's XI", division: "Finnish Women's T20 League", players: 14, coach: "Coach TBC" },
+  { name: "Under 19s", division: "National Youth T20", players: 14, coach: "Coach TBC" },
+  { name: "Under 15s", division: "Junior Development League", players: 13, coach: "Coach TBC" },
+  { name: "Indoor / Winter Squad", division: "Nordic Indoor Cricket Series", players: 12, coach: "Coach TBC" },
 ];
 
 export const fixtures = [
-  { date: "Sat 12 Sep", time: "14:00", opponent: "Frost Harbour FC", venue: "Home", comp: "League" },
-  { date: "Sat 19 Sep", time: "16:30", opponent: "Aurora United", venue: "Away", comp: "League" },
-  { date: "Wed 23 Sep", time: "19:45", opponent: "Granite Bay", venue: "Home", comp: "Cup" },
-  { date: "Sat 03 Oct", time: "14:00", opponent: "Fjordside Athletic", venue: "Away", comp: "League" },
-  { date: "Sat 10 Oct", time: "13:00", opponent: "Northlight Rangers", venue: "Home", comp: "League" },
+  { date: "Sat 12 Jun", time: "11:00", opponent: "Helsinki Gymkhana CC", venue: "Home", comp: "Premier T20" },
+  { date: "Sun 20 Jun", time: "10:30", opponent: "Espoo Expats CC", venue: "Away", comp: "Premier T20" },
+  { date: "Sat 03 Jul", time: "12:00", opponent: "Tampere Cricket Club", venue: "Home", comp: "Suomi Cup" },
+  { date: "Sat 17 Jul", time: "11:00", opponent: "Turku Titans CC", venue: "Away", comp: "Premier T20" },
+  { date: "Sun 01 Aug", time: "11:00", opponent: "Vantaa Vikings CC", venue: "Home", comp: "Premier T20" },
 ];
 
 export const results = [
-  { date: "Sat 29 Aug", opponent: "Kalmar Wolves", score: "3 – 1", outcome: "W" },
-  { date: "Sat 22 Aug", opponent: "Silverpine SC", score: "2 – 2", outcome: "D" },
-  { date: "Sat 15 Aug", opponent: "Bergen Vale", score: "0 – 1", outcome: "L" },
+  { date: "Sun 30 May", opponent: "Lahti Lions CC", score: "Won by 6 wkts", outcome: "W" },
+  { date: "Sat 22 May", opponent: "Oulu Nomads CC", score: "Tied", outcome: "D" },
+  { date: "Sat 15 May", opponent: "Helsinki Cricket Club", score: "Lost by 21 runs", outcome: "L" },
 ];
 
 export const news = [
   {
-    title: "Pre-season camp wraps up in the highlands",
-    date: "24 August",
+    title: "Squad completes indoor pre-season in Helsinki",
+    date: "24 April",
     excerpt:
-      "Ten days of altitude work, tactical sessions and cold-water recovery have the squad in the sharpest shape in years.",
+      "Eight weeks of indoor nets, strength work and match simulation have the batting order settled ahead of the short Finnish summer.",
   },
   {
-    title: "Youth academy opens winter trials",
-    date: "18 August",
+    title: "Junior cricket trials open for the summer season",
+    date: "18 April",
     excerpt:
-      "Registration is open for players born 2010–2014. Trials run across three weekends at the club training ground.",
+      "Registration is open for players born 2007–2012. Trials run across three weekends, with bats and pads provided for newcomers.",
   },
   {
-    title: "New community programme announced",
-    date: "05 August",
+    title: "Club launches free schools cricket programme",
+    date: "05 April",
     excerpt:
-      "Free weekly sessions for local schools, delivered by first-team players and club coaching staff.",
+      "Weekly soft-ball cricket sessions for local schools, delivered by first XI players and club coaching staff.",
   },
 ];
