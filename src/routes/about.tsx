@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const title = "About the Club — Nordic Capitals";
-const description = "The story, values and facilities behind Nordic Capitals sports club.";
+const title = "About the Club — Nordic Capitals Cricket Club";
+const description =
+  "The story, values and facilities behind Nordic Capitals Cricket Club in Finland.";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -16,9 +17,18 @@ export const Route = createFileRoute("/about")({
 });
 
 const values = [
-  { title: "Community first", body: "Open doors, affordable membership and a place for every level." },
-  { title: "Develop players", body: "A clear pathway from the youth academy through to the first team." },
-  { title: "Compete hard", body: "Disciplined, honest performances every week of the season." },
+  {
+    title: "Community first",
+    body: "Open doors, affordable membership and a welcome for every nationality and skill level.",
+  },
+  {
+    title: "Develop cricketers",
+    body: "A clear pathway from junior soft-ball cricket through to the first XI.",
+  },
+  {
+    title: "Compete hard",
+    body: "Disciplined, spirited cricket across the Finnish league and cup season.",
+  },
 ];
 
 function AboutPage() {
@@ -26,8 +36,9 @@ function AboutPage() {
     <div className="mx-auto max-w-4xl px-4 py-16">
       <h1 className="text-5xl tracking-widest">About the Club</h1>
       <p className="mt-5 text-lg text-muted-foreground">
-        Nordic Capitals is a member-run sports club with six competing teams and a growing youth
-        academy. We train through the dark months and play the whole season out, whatever the weather.
+        Nordic Capitals is a member-run cricket club based in Finland, fielding six squads across the
+        national league, cup and junior competitions. We bat and bowl indoors through the long winter,
+        then play every weekend of the short Finnish summer.
       </p>
       <div className="mt-10 grid gap-6 sm:grid-cols-3">
         {values.map((v) => (
@@ -40,8 +51,9 @@ function AboutPage() {
       <div className="mt-10 rounded-lg border border-border bg-card p-6">
         <h2 className="text-2xl tracking-widest">Club history</h2>
         <p className="mt-3 text-muted-foreground">
-          Founded in 1974 by a handful of local players, the club has grown into one of the region's
-          largest community sports organisations. Full history and honours will be published here.
+          Started in 1998 by a small group of cricket-mad friends playing on a borrowed matting wicket,
+          the club has grown into one of Finland's most active cricket communities. Full history and
+          honours will be published here.
         </p>
       </div>
     </div>

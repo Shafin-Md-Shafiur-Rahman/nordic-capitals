@@ -2,9 +2,9 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImg from "@/assets/hero.jpg";
 import { fixtures, news, results } from "@/lib/club-data";
 
-const title = "Nordic Capitals Sports Club";
+const title = "Nordic Capitals Cricket Club — Finland";
 const description =
-  "Official home of Nordic Capitals: teams, fixtures, results, club news and member sign in.";
+  "Official home of Nordic Capitals Cricket Club in Finland: teams, fixtures, results, club news and member sign in.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -24,19 +24,20 @@ function Index() {
       <section className="relative isolate">
         <img
           src={heroImg}
-          alt="Nordic Capitals players training under floodlights"
+          alt="Nordic Capitals cricket match on a Finnish ground surrounded by pine forest"
           width={1920}
           height={1080}
           className="absolute inset-0 size-full object-cover"
         />
         <div className="absolute inset-0 bg-night-fade" />
         <div className="relative mx-auto max-w-6xl px-4 py-32 sm:py-44">
-          <p className="text-xs uppercase tracking-[0.4em] text-accent">Est. in the north</p>
+          <p className="text-xs uppercase tracking-[0.4em] text-accent">Cricket in Finland</p>
           <h1 className="mt-4 max-w-3xl text-5xl leading-[0.95] sm:text-7xl">
-            Cold ground. Warm club. Nordic Capitals.
+            Short summers. Long innings. Nordic Capitals.
           </h1>
           <p className="mt-5 max-w-xl text-base text-muted-foreground">
-            Six teams, one community. Follow the season, meet the squads and join the club.
+            A Finnish cricket club with six squads and one community. Follow the season, meet the
+            teams and join us at the nets.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Link
@@ -58,10 +59,10 @@ function Index() {
       <section className="border-y border-border/60 bg-card/40">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-6 px-4 py-10 sm:grid-cols-4">
           {[
-            ["6", "Teams"],
-            ["119", "Registered players"],
-            ["3", "Training grounds"],
-            ["1974", "Founded"],
+            ["6", "Squads"],
+            ["84", "Registered players"],
+            ["2", "Home grounds"],
+            ["1998", "Founded"],
           ].map(([value, label]) => (
             <div key={label}>
               <p className="font-display text-4xl text-accent">{value}</p>
@@ -99,13 +100,15 @@ function Index() {
             {results.map((r) => (
               <li
                 key={r.date}
-                className="flex items-center justify-between rounded-lg border border-border bg-card p-4"
+                className="flex items-center justify-between gap-4 rounded-lg border border-border bg-card p-4"
               >
                 <div>
                   <p className="font-semibold">{r.opponent}</p>
                   <p className="text-xs uppercase tracking-widest text-muted-foreground">{r.date}</p>
                 </div>
-                <span className="font-display text-2xl text-accent">{r.score}</span>
+                <span className="shrink-0 text-right text-sm font-semibold uppercase tracking-widest text-accent">
+                  {r.score}
+                </span>
               </li>
             ))}
           </ul>
