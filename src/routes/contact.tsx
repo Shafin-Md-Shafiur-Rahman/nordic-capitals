@@ -1,7 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-const title = "Contact — Nordic Capitals";
-const description = "Get in touch with Nordic Capitals about membership, trials and club enquiries.";
+const title = "Contact — Nordic Capitals Cricket Club";
+const description =
+  "Get in touch with Nordic Capitals Cricket Club in Finland about membership, trials and club enquiries.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({

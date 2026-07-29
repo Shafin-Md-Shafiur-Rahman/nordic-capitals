@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { news } from "@/lib/club-data";
 
-const title = "Club News — Nordic Capitals";
-const description = "Latest announcements, match reports and community updates from Nordic Capitals.";
+const title = "Club News — Nordic Capitals Cricket Club";
+const description =
+  "Latest announcements, match reports and community updates from Nordic Capitals Cricket Club in Finland.";
 
 export const Route = createFileRoute("/news")({
   head: () => ({
