@@ -1,8 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { fixtures, results } from "@/lib/club-data";
 
-const title = "Fixtures & Results — Nordic Capitals";
-const description = "Upcoming Nordic Capitals fixtures, kick-off times, venues and recent results.";
+const title = "Fixtures & Results — Nordic Capitals Cricket Club";
+const description =
+  "Upcoming Nordic Capitals cricket fixtures, start times, grounds and recent match results in Finland.";
 
 export const Route = createFileRoute("/fixtures")({
   head: () => ({
@@ -27,9 +28,9 @@ function FixturesPage() {
           <thead className="bg-secondary text-xs uppercase tracking-widest text-muted-foreground">
             <tr>
               <th className="p-3">Date</th>
-              <th className="p-3">Time</th>
+              <th className="p-3">Start</th>
               <th className="p-3">Opponent</th>
-              <th className="p-3">Venue</th>
+              <th className="p-3">Ground</th>
               <th className="p-3">Competition</th>
             </tr>
           </thead>
@@ -53,7 +54,7 @@ function FixturesPage() {
           <li key={r.date} className="rounded-lg border border-border bg-card p-4">
             <p className="text-xs uppercase tracking-widest text-muted-foreground">{r.date}</p>
             <p className="mt-1 font-semibold">{r.opponent}</p>
-            <p className="mt-2 font-display text-3xl text-accent">{r.score}</p>
+            <p className="mt-2 text-lg font-semibold text-accent">{r.score}</p>
           </li>
         ))}
       </ul>

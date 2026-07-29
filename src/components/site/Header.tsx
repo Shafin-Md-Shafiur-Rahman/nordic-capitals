@@ -24,7 +24,7 @@ export function Header() {
           <span className="leading-none">
             <span className="block font-display text-xl tracking-widest">NORDIC CAPITALS</span>
             <span className="block text-[10px] uppercase tracking-[0.3em] text-muted-foreground">
-              Sports Club
+              Cricket Club · Finland
             </span>
           </span>
         </Link>

@@ -80,16 +80,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Nordic Capitals Sports Club" },
+      { title: "Nordic Capitals Cricket Club — Finland" },
       {
         name: "description",
-        content: "Nordic Capitals sports club — teams, fixtures, news and player sign in.",
+        content:
+          "Nordic Capitals Cricket Club, Finland — teams, fixtures, news and player sign in.",
       },
       { name: "author", content: "Nordic Capitals" },
-      { property: "og:title", content: "Nordic Capitals Sports Club" },
+      { property: "og:title", content: "Nordic Capitals Cricket Club — Finland" },
       {
         property: "og:description",
-        content: "Nordic Capitals sports club — teams, fixtures, news and player sign in.",
+        content:
+          "Nordic Capitals Cricket Club, Finland — teams, fixtures, news and player sign in.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

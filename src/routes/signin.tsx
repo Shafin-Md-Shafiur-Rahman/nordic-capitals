@@ -2,8 +2,8 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { toast } from "sonner";
 
-const title = "Sign In — Nordic Capitals";
-const description = "Player and admin sign in for Nordic Capitals club members.";
+const title = "Sign In — Nordic Capitals Cricket Club";
+const description = "Player and admin sign in for Nordic Capitals Cricket Club members in Finland.";
 
 export const Route = createFileRoute("/signin")({
   head: () => ({
