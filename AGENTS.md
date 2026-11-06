@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- GitHub Pages: static prerender + base path are enabled only when GITHUB_PAGES=true (see vite.config.ts and .github/workflows/deploy-pages.yml), so Lovable hosting builds stay unchanged.
