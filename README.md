@@ -1,4 +1,4 @@
-# Nordic Capitals Hub
+# Nordic Capitals
 
 Build a sports Club Website for public view.  Add sign in option for player and admin. Admin Panel I will Add / Replace Picture later. Club logo replace later.  Contact Details Later. Club name Nordic Capitals.  I will develop admin panel later. Build the static website first.
 
